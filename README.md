@@ -1,4 +1,4 @@
-# 🪖 Military Vision Enhancement & Object Detection Pipeline
+# Military Vision Enhancement & Object Detection Pipeline
 
 [![C++](https://img.shields.io/badge/C%2B%2B-11%2F17%2F20-blue.svg)](https://en.cppreference.com/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)](https://opencv.org/)
@@ -8,7 +8,7 @@ A high-performance C++ computer vision pipeline designed for challenging, low-vi
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Two-Stage Adaptive Pipeline:** Integrates 9 KB ultra-lightweight **AOD-Net** for real-time dehazing and contrast enhancement prior to object detection.
 * **Optimized C++ Implementation:** Built natively using **OpenCV DNN module** (`DNN_BACKEND_OPENCV`) running entirely on CPU with efficient memory management (no heavy Python runtime overhead).
@@ -17,13 +17,14 @@ A high-performance C++ computer vision pipeline designed for challenging, low-vi
 
 ---
 
-## 📊 Performance & Results
+## Performance & Results
 
 Under heavy atmospheric degradation (fog/dust storms), the AOD-Net preprocessing layer yields an **approx. 10–15% accuracy and reliability boost** over standard raw inference by recovering hidden edge details.
 
-| Original Hazy Input (Degraded Vision) | AOD-Net Enhanced Pipeline Output |
-| :---: | :---: |
-| ![Original Hazy](orijinal_sisli.jpg) | ![Enhanced Dehazed](aod_net_temizlenmis.jpg) |
+Under heavy atmospheric degradation (fog/dust storms), the AOD-Net preprocessing layer yields an **approx. 10–15% accuracy and reliability boost** over standard raw inference by recovering hidden edge details.
+
+* **Left:** Original Hazy Input (Degraded Vision) | **Right:** AOD-Net Enhanced Pipeline Output
+![Before After Comparison](result.png)
 
 ---
 
